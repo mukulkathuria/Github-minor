@@ -19,11 +19,16 @@ export const Labels = styled.label`
 export const Successbtn = styled.button`
     width:100%;
     padding:25px;
-    background-color: lightgreen;
+    background-color: #2ebc4f;
     color:white;
     border:none;
     border-radius:12px;
-    
-    &:hover{
+    outline:none;
+    cursor:pointer;
+
+    &:disabled{
+        background-color:lightgreen;
+        cursor:default;
     }
+    
 ` ;

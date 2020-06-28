@@ -1,6 +1,7 @@
 const intialValue = {
     username : '',
-    email : ''
+    email : '',
+    password:''
   }
   
 export default intialValue;

@@ -1,18 +1,9 @@
-const validate = values => {
-            let errors ={};
-            if (!values.username) {
-            errors.username = 'Required';
-        } 
-        if ( values.username.length <=3 ) {
-            errors.username = 'Invalid name';
-        }
-        if (!values.email) {
-            errors.email = 'Required';
-        } 
-        if ( values.email.length <=3 ) {
-            errors.email = 'Invalid email';
-        }
-            return errors;
-  }
+import * as Yup from 'yup';
 
-export default validate;
+const validationSchema = Yup.object({
+        email:Yup.string().email().required(),
+        username:Yup.string().min(3).required(),
+        password:Yup.string().min(3).required()
+});
+
+export default validationSchema;

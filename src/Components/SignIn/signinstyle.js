@@ -22,3 +22,7 @@ export const SuccessBtn = styled.button`
         border:none;
         border-radius:12px;
 `;
+export const Errormsg = styled.span`
+        font-size:10px;
+        color:red;
+`;
