@@ -21,6 +21,10 @@ export const SuccessBtn = styled.button`
         color:white;
         border:none;
         border-radius:12px;
+        cursor:pointer;
+        &:hover{
+                background-color:lightgreen;
+        }
 `;
 export const Errormsg = styled.span`
         font-size:10px;

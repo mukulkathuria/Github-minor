@@ -14,6 +14,10 @@ export const InputDiv = styled.div`
 
 export const Labels = styled.label`
     width :100%;
+    &::after{
+      content:' *';
+      color:red;
+    }
 ` ;
 
 export const Successbtn = styled.button`

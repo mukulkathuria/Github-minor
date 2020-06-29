@@ -64,7 +64,6 @@ class SignInForm extends React.Component{
         const [auth,changeauth] = this.context;
         if(this.state.formvalidate){
             changeauth({data:this.state.formvalidate});
-            console.log(`Authentication ${auth}`);
            return <Redirect to='/dashboard' />
         }
         const {errors} = this.state;

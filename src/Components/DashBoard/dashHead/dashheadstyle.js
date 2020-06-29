@@ -20,3 +20,9 @@ export const HeadContainer = styled.div`
         margin:auto 1rem;
     }
 `;
+export const Navlinks = styled.div`
+`;
+export const DivStyle = styled.div`
+        display:flex;
+        align-items:center;
+`;

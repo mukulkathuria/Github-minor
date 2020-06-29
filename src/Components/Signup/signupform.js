@@ -15,7 +15,7 @@ class SignupForm extends React.Component {
         .then(res => { this.setState({form:true});}).catch(err => console.log(err));
     }
     render(){
-        if(this.state.form) return <Redirect to='/' />
+        if(this.state.form) return <Redirect to='/confirmation' />
         return(
             <Formik
                 initialValues = {intialValue}
@@ -38,7 +38,7 @@ class SignupForm extends React.Component {
                     <InputDiv><Field type='password' name='password' />
                     <ErrorMessage name='password' />
                     </InputDiv>
-                    <Successbtn type='submit' disabled={!formik.isValid}> 
+                    <Successbtn type='submit' disabled={!formik.isValid || formik.isSubmitting}> 
                     {this.props.issignup ? 'Create Account' : 'Sign Up for Github'}</Successbtn>
                     </Form>
                 )}

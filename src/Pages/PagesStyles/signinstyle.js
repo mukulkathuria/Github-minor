@@ -14,3 +14,11 @@ export const DivContainer = styled.div`
             }
         }
 `;
+export const Heading =  styled.div`
+        text-align:center;
+        margin:1rem auto;
+        h2{
+            font-size:1.6rem;
+            font-weight:400;
+        }
+`;

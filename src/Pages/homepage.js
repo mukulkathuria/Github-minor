@@ -2,11 +2,9 @@ import React from 'react';
 import Header from '../Components/Header/header';
 import { DivContainer,Heading , Headdesc ,SignForm ,Home} from './PagesStyles/homepagestyle';
 import SignupForm from '../Components/Signup/signupform';
-import {Auth} from '../Contexts/AuthContext';
+
 
 const Homepage = () =>{
-    const [auth] = React.useContext(Auth);
-    console.log(auth);
     return(
         <Home>
             <Header />
