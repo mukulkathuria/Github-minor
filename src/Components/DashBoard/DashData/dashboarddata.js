@@ -1,20 +1,33 @@
 import React from 'react';
-import { DivContainer ,StyleDiv} from './dashdatastyle';
-import axios from 'axios';
-
+import { DivContainer ,
+    StyleDiv,ProfileImg,
+    MojorBody,
+    MajorBodyStatus,
+    MinorBody,StyleBody,Bodypart1} from './dashdatastyle';
+import Datafile from '../../../Data/dashboard.json';
 
 const DashData = () =>{
-    const [data,changedata] = React.useState({userdata:null});
-    React.useEffect( () =>{
-        axios.get('https://jsonplaceholder.typicode.com/posts')
-        .then(res => changedata({userdata:res.data.filter((list,i) => i<5)}));
-    },[]);
+    
     return(
-        data.userdata &&
         <DivContainer>
-            {data.userdata.map(list => <StyleDiv key={list.id}>
-                <p>{list.body}</p>
-                </StyleDiv>)}
+            {Datafile.map(list =>
+                <StyleDiv key={list.id}>
+                <ProfileImg><img src={list.img1} alt='' /></ProfileImg>
+                <MojorBody>
+                    <MajorBodyStatus>{list.status}</MajorBodyStatus>
+                    <MinorBody>
+                        <Bodypart1>
+                    <ProfileImg><img src={list.img2} alt='' /></ProfileImg>
+                        <StyleBody>
+                        <div className='headings'>{list.title}</div>
+                        <div>{list.body}</div>
+                        </StyleBody>
+                        </Bodypart1>
+                        <button>follow</button>
+                        </MinorBody>
+                </MojorBody>
+             </StyleDiv>
+                )}
         </DivContainer>
     );
 }

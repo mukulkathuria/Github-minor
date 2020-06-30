@@ -1,8 +1,10 @@
 import React from 'react';
 import Logo from '../../../images/logo.png';
-import {Head , HeadContainer,Navlinks,DivStyle} from './dashheadstyle';
+import {Head , HeadContainer,Navlinks,
+    DivStyle,Account} from './dashheadstyle';
 import { Link, Redirect } from 'react-router-dom';
 import {Auth} from '../../../Contexts/AuthContext';
+import { FaUserAlt } from 'react-icons/fa';
 
 const Dashhead = () =>{
     const [auth,changeauth] = React.useContext(Auth);
@@ -22,10 +24,13 @@ const Dashhead = () =>{
                         <a href='/'>Explore</a>
                     </Navlinks>
                 </DivStyle>
-            <div>
-            {auth.data && `Hi ${auth.data.name}`}
-            <Link to='/' onClick={() => handleClick()}>Log Out</Link>
-            </div>
+            <Account>
+                <FaUserAlt color='white' />
+                <div className='account-details'>
+                <div><span className='small'>signed as</span> {auth.data.name}</div>
+                <div><Link to='/' onClick={() => handleClick()}>Log Out</Link></div>
+                </div>
+            </Account>
             </HeadContainer>
             </Head>
     );

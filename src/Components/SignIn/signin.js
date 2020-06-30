@@ -66,6 +66,7 @@ class SignInForm extends React.Component{
             changeauth({data:this.state.formvalidate});
            return <Redirect to='/dashboard' />
         }
+        if(auth.data) return<Redirect to='/dashboard' />
         const {errors} = this.state;
         return(
             <form onSubmit={this.submitHandle} >

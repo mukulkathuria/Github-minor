@@ -1,18 +1,50 @@
 import styled from 'styled-components';
 
 export const DivContainer = styled.div`
-        width:70%;
-        margin:5% 15%;
+       margin:auto 18%;
+       background-color:#f1f1f1;
 `;
 
 export const StyleDiv = styled.div`
-        margin:1.2rem;
+        display:flex;
+        padding:20px;
+        font-size:14px;
+        border-bottom:0.2px solid darkgrey;
+`;
+export const ProfileImg = styled.div`
+        width:2rem;
+        height:2rem;
+        img{
+                width:100%;
+                height:100%;
+        }
+`;
+export const MojorBody = styled.div`
         display:flex;
         flex-direction:column;
-        border:0.2px solid;
-        p{
-            width:80%;
-            margin:2rem auto;
-            text-align:justify;
-        }
+        width:100%;
+`;
+export const MajorBodyStatus = styled.div`
+`;
+export const MinorBody = styled.div`
+                display:flex;
+                padding:10px;
+                background-color:white;
+                justify-content:space-between;
+                border:0.2px solid darkgrey;
+                button{
+                        height:20px;
+                        width:50px;
+                        border:none;
+                        cursor:pointer;
+                }
+`;
+export const StyleBody = styled.div`
+        display:flex;
+        flex-direction:column;
+        margin-left:10px;
+`;
+export const Bodypart1 = styled.div`
+                display:flex;
+                padding:10px;
 `;
