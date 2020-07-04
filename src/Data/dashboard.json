@@ -5,7 +5,9 @@
         "title":"Adarsh Hogla",
         "body":"Noob fullstack dev",
         "img1":"./images/man.svg",
-        "img2":"./images/random2.jpg"
+        "img2":"./images/random2.jpg",
+        "followers":4,
+        "repo":7
     },
     {
         "id":"2",
@@ -13,7 +15,9 @@
         "title":"Akash Sharma",
         "body":"Student Passionate Coder learn Devops",
         "img1":"./images/man.svg",
-        "img2":"./images/random2.jpg"
+        "img2":"./images/random2.jpg",
+        "followers":4,
+        "repo":7
     },
     {
         "id":"3",
@@ -21,7 +25,9 @@
         "title":"Akash Sharma",
         "body":"Student Passionate Coder learn Devops",
         "img1":"./images/man.svg",
-        "img2":"./images/random2.jpg"
+        "img2":"./images/random2.jpg",
+        "followers":4,
+        "repo":7
     },
     {
         "id":"4",
@@ -29,7 +35,9 @@
         "title":"geek/computers",
         "body":"My python Examples",
         "img1":"./images/man.svg",
-        "img2":"./images/random2.jpg"
+        "img2":"./images/random2.jpg",
+        "followers":4,
+        "repo":7
     },
     {
         "id":"5",
@@ -37,6 +45,8 @@
         "title":"Python-poetry",
         "body":"My Python poetry",
         "img1":"./images/man.svg",
-        "img2":"./images/random2.jpg"
+        "img2":"./images/random2.jpg",
+        "followers":4,
+        "repo":0
     }
 ]

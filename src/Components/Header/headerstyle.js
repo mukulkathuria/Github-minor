@@ -43,3 +43,20 @@ export const SignComp = styled.div`
             margin:auto 1rem;
         }
 `;
+export const Inputs = styled.input`
+        margin-right:10px;
+        background-color:#3f4448;
+        padding:5px;
+        border:none;
+        width:14rem;
+        border-radius:5px;
+        transition:1s;
+        ::placeholder{
+            color:white;
+        }
+        &:focus{
+            background-color:white;
+            width:25rem;
+            outline:none;
+        }
+`;

@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 
-export const DivContainer = styled.div`
-        width:80%;
-        margin:5% 10%;
+export const DashStyle = styled.div`
+        background-color:#f7f8fa;
 `;

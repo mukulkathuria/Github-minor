@@ -5,18 +5,19 @@ import LeftSideBar from '../Components/DashBoard/LeftSideBar/leftSideBar';
 import RightSideBar from '../Components/DashBoard/RightSideBar/rightSideBar';
 import {Auth} from '../Contexts/AuthContext';
 import {Redirect} from 'react-router-dom';
+import { DashStyle } from './PagesStyles/dashboardstyle';
 
 const DashBoard = () =>{
     const [auth] = React.useContext(Auth);
     if(!auth.data) return <Redirect to='/' />
     
     return(
-        <div>
+        <DashStyle>
            <Dashhead />
            <LeftSideBar />
            <RightSideBar />
            <DashData />
-        </div>
+        </DashStyle>
     );
 }
 export default DashBoard;

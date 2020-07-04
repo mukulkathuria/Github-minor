@@ -19,6 +19,10 @@ export const Labels = styled.label`
       color:red;
     }
 ` ;
+export const SmallDiv = styled.div`
+    font-size:12px;
+    color:black;
+`;
 
 export const Successbtn = styled.button`
     width:100%;
@@ -29,7 +33,7 @@ export const Successbtn = styled.button`
     border-radius:12px;
     outline:none;
     cursor:pointer;
-
+    margin:2rem auto;
     &:disabled{
         background-color:lightgreen;
         cursor:default;

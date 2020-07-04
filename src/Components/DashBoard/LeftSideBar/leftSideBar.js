@@ -11,17 +11,25 @@ const LeftSideBar = () =>{
             <User><FaUserAlt />{auth.data.name}</User>
             <hr />
             <SideLinks>
+                <div>
+                    <div className='flex'>
+                        <div>Repositories</div>
+                        <button>New</button>
+                    </div>
+                    <input type='text' placeholder='Find Repositories' />
+                </div>
                 <ul>
                     <li><BsLock />Somelink</li>
                     <li><BsLock />Somelink</li>
                     <li><BsLock />Somelink</li>
                     <li><BsLock />Somelink</li>
                 </ul>
+                <div className='showmore'>Show more</div>
             </SideLinks>
             <hr />
             <Teams>
-                <span>Your Teams</span>
-                <div>You dont belong to any team yet</div>
+                <span>Your teams</span>
+                <div>You don't belong to any team yet</div>
             </Teams>
         </SideBar>
     );

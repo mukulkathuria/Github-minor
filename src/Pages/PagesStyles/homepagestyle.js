@@ -31,6 +31,7 @@ export const SignForm = styled.div`
 export const Home = styled.div`
         background-color:rgba(0,0,0,0.6);
         position:fixed;
+        overflow:scroll;
         height:100%;
         width:100%;
 `;

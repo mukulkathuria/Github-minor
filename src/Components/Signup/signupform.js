@@ -1,6 +1,6 @@
 import React from 'react';
 import {Formik ,Form ,Field , ErrorMessage} from 'formik';
-import { InputDiv , Labels , Successbtn } from './Formstyle/signupstyle';
+import { InputDiv , Labels , Successbtn ,SmallDiv} from './Formstyle/signupstyle';
 import intialValue from './FormValidation/initials';
 import validationSchema from './FormValidation/errorHandle';
 import { Redirect } from 'react-router-dom';
@@ -37,12 +37,16 @@ class SignupForm extends React.Component {
                     <Labels>Password</Labels>
                     <InputDiv><Field type='password' name='password' />
                     <ErrorMessage name='password' />
+                    <SmallDiv>Make sure it's at least 15 characters OR at least 8 characters 
+                        including a number and a lowercase letter.</SmallDiv>
                     </InputDiv>
                     <Successbtn type='submit' disabled={!formik.isValid || formik.isSubmitting}> 
                     {this.props.issignup ? 'Create Account' : 'Sign Up for Github'}</Successbtn>
+
+                    <SmallDiv>By clicking “Sign up for GitHub”, you agree to our Terms of Service and Privacy Statement.
+                         We’ll occasionally send you account related emails.</SmallDiv>
                     </Form>
                 )}
-            
             </Formik>
         );
     }
