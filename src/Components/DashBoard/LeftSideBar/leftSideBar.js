@@ -3,6 +3,7 @@ import {SideBar ,User ,SideLinks,Teams} from './leftSidebarstyle';
 import {Auth} from '../../../Contexts/AuthContext';
 import { FaUserAlt } from 'react-icons/fa';
 import { BsLock } from 'react-icons/bs';
+import {GoRepo} from 'react-icons/go';
 
 const LeftSideBar = () =>{
     const [auth] = React.useContext(Auth);
@@ -14,15 +15,15 @@ const LeftSideBar = () =>{
                 <div>
                     <div className='flex'>
                         <div>Repositories</div>
-                        <button>New</button>
+                        <button><GoRepo />New</button>
                     </div>
-                    <input type='text' placeholder='Find Repositories' />
+                    <input type='text' placeholder='Find a repository' />
                 </div>
                 <ul>
-                    <li><BsLock />Somelink</li>
-                    <li><BsLock />Somelink</li>
-                    <li><BsLock />Somelink</li>
-                    <li><BsLock />Somelink</li>
+                    <li><BsLock /><a href='adnaj'>Somelink</a></li>
+                    <li><BsLock /><a href='dbh'>Somelink</a></li>
+                    <li><BsLock /><a href='dh'>Somelink</a></li>
+                    <li><BsLock /><a href='fu'>Somelink</a></li>
                 </ul>
                 <div className='showmore'>Show more</div>
             </SideLinks>

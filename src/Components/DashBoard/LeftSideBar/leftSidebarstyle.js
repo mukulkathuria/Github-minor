@@ -6,7 +6,7 @@ export const SideBar = styled.div`
         position:fixed;
         top:auto;
         left:0;
-        padding:30px;
+        padding:18px;
         overflow-x: hidden;
         border-right:0.2px solid #e8e9eb;
         background-color:white;
@@ -17,7 +17,6 @@ export const SideBar = styled.div`
 `;
 export const User = styled.div`
     font-size:14px;
-    margin:1rem auto;
     svg{
         margin-right:10px;
     }
@@ -34,16 +33,27 @@ export const SideLinks = styled.div`
         li{
             margin:8px 0;
         }
+        a{
+            text-decoration:none;
+            font-weight:600;
+
+        }
         .flex{
             display:flex;
             justify-content:space-between;
+            font-weight:600;
             button{
-                background-color:#34c953;
-                padding:3px;
-                color:#c7fae3;
-                font-size:9px;
+                background-color:#2ea44f;
+                padding: 3px 12px;
+                color:#fff;
+                font-size:12px;
                 border:none;
                 border-radius:3px;
+                svg{
+                    color:#c7fae3;
+                    margin-right:2px;
+                }
+                
             }
         }
         input{

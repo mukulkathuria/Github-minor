@@ -16,12 +16,19 @@ const DashData = () => {
                 <StyleDiv>
                     <ProfileImg><img src={list.img1} alt='' /></ProfileImg>
                     <MojorBody>
-                        <MajorBodyStatus>{list.status}<span className='timestamp'>yesterday</span></MajorBodyStatus>
+                        <MajorBodyStatus>
+                        <span className='bold'>
+                            <a href={list.status.split(' ')[0]}>{list.status.split(' ')[0]}</a>
+                        </span>
+                        {list.status.split(' ').filter((list,i) => i>0).join(' ')}
+                        <span className='timestamp'>yesterday</span></MajorBodyStatus>
                         <MinorBody>
                             <Bodypart1>
                                 <ProfileImg><img src={list.img2} alt='' /></ProfileImg>
                                 <StyleBody>
-                                    <div className='headings'>{list.title}</div>
+                                    <div className='headings'>
+                                    <a href={list.title}>{list.title}</a>
+                                    </div>
                                     <div>{list.body}</div>
                                     <div className='small'>{list.repo > 0 && `${list.repo} repositories`} 
                                     {list.followers > 0 && ` ${list.followers} followers`}</div>

@@ -6,16 +6,18 @@ export const Head = styled.div`
     position:sticky;
     top:0;
     left:0;
+    z-index:9;
+    font-size:12px;
 `;
 
 export const HeadContainer = styled.div`
-    width:96%;
-    margin:auto 2%;
+    width:98%;
+    margin:auto 1%;
     color:white;
     display:flex;
+    height:45px;
     justify-content:space-between;
     align-items:center;
-    height:60px;
     a{
         text-decoration:none;
         color:inherit;
@@ -32,6 +34,7 @@ export const DivStyle = styled.div`
         }
         img{
             margin-right:10px;
+            width:2em;
         }
         input{
         background-color:#3f4448;
@@ -39,6 +42,7 @@ export const DivStyle = styled.div`
         border:none;
         width:14rem;
         border-radius:5px;
+        font-size:inherit;
         transition:1s;
         ::placeholder{
             color:white;
@@ -51,33 +55,41 @@ export const DivStyle = styled.div`
     }
 `;
 export const Account = styled.div`
-        poistion:relative;
+        display:flex;
+        align-items:center;
+        svg{
+            margin-left:1rem;
+        }
+        .plus{
+            font-size:1.2em;
+        }
+        .arrow{
+            margin:0;
+            font-size:0.7em;
+        }
+        .user{
+            position:relative
+        }
         .account-details{
             position:absolute;
             z-index:1;
             background-color:white;
             color:black;
-            border-radius:10px;
-            line-height:2;
-            right:5px;
-            width:160px;
-            display:none;
+            border-radius:5px;
+            line-height:2.2;
+            font-size:12px;
+            right:0;
+            width:140px;
             a div:hover{
                 background-color:blue;
                 color:white;
                 border-radius:5px;
             }
         }
-        .small{
-            font-size:12px;
-        }
         a{
             margin:0;
         }
         &:hover{
             cursor:pointer;
-        }
-        &:hover .account-details{
-            display:block;
         }
 `;

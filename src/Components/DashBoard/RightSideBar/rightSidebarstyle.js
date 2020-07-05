@@ -4,7 +4,7 @@ import styled from 'styled-components';
 export const SideBar = styled.div`
         width:19%;
         float:right;
-        padding:20px;
+        padding:12px;
         hr{
         border:0.2px solid #e8e9eb;
         }
@@ -16,7 +16,7 @@ export const SideBar = styled.div`
 
 export const Heading = styled.div`
        font-size:14px;
-       font-weight:500;
+       font-weight:600;
 `;
 
 export const RepoDiv = styled.div`
@@ -32,7 +32,7 @@ export const RepoDiv = styled.div`
                 background-color:yellow;
         }
         .title{
-                font-weight:500;
+                font-weight:600;
         }
 `;
 export const Lang = styled.div`
@@ -48,20 +48,20 @@ export const Lang = styled.div`
 export const Notif = styled.div`
         font-size:11px;
         background-color:#4764f0;
-        padding:5px;
+        padding:12px;
         color:white;
+        line-height:1.6;
         margin:1rem auto;
         border-radius:8px;
-        .flex{
-                display:flex;
-                justify-content:space-between;
-                word-spacing:2px;
-        }
+        position:relative;
+
         .cross{
                 cursor:pointer;
+                position:absolute;
+                top:3px;
+                right:8px;
         }
         p{
-           text-align:justify;
            margin:5px auto;
            font-size:10px;
         }
