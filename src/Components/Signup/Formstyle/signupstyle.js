@@ -4,7 +4,7 @@ import styled from 'styled-components';
 export const InputDiv = styled.div`
   font-size :12px;
   color:red;
-  margin :1rem auto;
+  margin :0.8em auto;
   input {
     padding : 8px;
     width :100%;
@@ -14,6 +14,8 @@ export const InputDiv = styled.div`
 
 export const Labels = styled.label`
     width :100%;
+    font-size:14px;
+    font-weight:600;
     &::after{
       content:' *';
       color:red;
@@ -26,11 +28,11 @@ export const SmallDiv = styled.div`
 
 export const Successbtn = styled.button`
     width:100%;
-    padding:25px;
+    padding:20px;
     background-color: #2ebc4f;
     color:white;
     border:none;
-    border-radius:12px;
+    border-radius:8px;
     outline:none;
     cursor:pointer;
     margin:2rem auto;

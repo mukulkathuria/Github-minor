@@ -6,6 +6,9 @@ export const Inputs = styled.input`
     border : 0.2px solid #f1f1f1;
     margin:10px auto;
     border-radius:10px;
+    &:focus{
+            border:2px solid blue;
+    }
 `;
 export const Labels = styled.label`
     width:100%;
